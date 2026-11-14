@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.webp" alt="dsh-terminal-tab — 对话视图栏里的持久终端 tab" width="100%">
+</p>
+
 <div align="center">
 
 <img src="icon.svg" width="96" alt="dsh-terminal-tab icon" />
@@ -34,23 +38,19 @@
 
 ## 安装
 
-Web（CLI）：
+Web 端：
 
-```sh
-dsh plugin --profile web add dsh-terminal-tab
 ```
-
-桌面端：打开应用内**插件**页搜索 `dsh-terminal-tab`。
-
-装完刷新页面即生效。
-
-## 更新
-
-```sh
+dsh plugin --profile web add dsh-terminal-tab
 dsh plugin --profile web update dsh-terminal-tab
 ```
 
-随后刷新页面。
+桌面端：
+
+```
+dsh plugin --profile desktop add dsh-terminal-tab
+dsh plugin --profile desktop update dsh-terminal-tab
+```
 
 ## 许可证
 
