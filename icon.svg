@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- terminal screen -->
+  <path d="M10 40 H118 V98 Q118 108 108 108 H20 Q10 108 10 98 Z" fill="#c7d3e8"/>
+  <!-- blue bar across the top -->
+  <path d="M10 40 V30 Q10 20 20 20 H108 Q118 20 118 30 V40 Z" fill="#3d6ff4"/>
+  <!-- prompt chevron -->
+  <path d="M38 58 L54 74 L38 90" fill="none" stroke="#3d6ff4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- prompt underscore -->
+  <path d="M66 85 H90" fill="none" stroke="#3d6ff4" stroke-width="8" stroke-linecap="round"/>
+</svg>

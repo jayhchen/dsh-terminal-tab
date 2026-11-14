@@ -1,0 +1,6 @@
+# dsh-terminal-tab 的挂载行：作为普通行追加到组合树末尾。
+# 宿主入口是空 apply（浏览器-only 插件）；Web 侧按 package.json 的
+# dsh.client 清单加载 lib/client.js 并注册顶部"终端" tab。
+- insert:
+    - id: terminal-tab
+      name: dsh-terminal-tab

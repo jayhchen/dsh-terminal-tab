@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Lockfile — bundle-affecting build deps (esbuild, @xterm/*) are exact-pinned in
+# package.json; type-only deps may drift, which does not change shipped bytes
+package-lock.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+
+# TypeScript build info
+*.tsbuildinfo

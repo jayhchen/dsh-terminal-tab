@@ -1,0 +1,100 @@
+{
+  "name": "dsh-terminal-tab",
+  "version": "0.1.0",
+  "description": "Terminal tab for the Conversation view row — the same persistent shells as the sidebar terminal, mounted as a top tab",
+  "icon": "icon.svg",
+  "author": "jay (jayhchen)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayhchen/dsh-terminal-tab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jayhchen/dsh-terminal-tab/issues"
+  },
+  "homepage": "https://github.com/jayhchen/dsh-terminal-tab#readme",
+  "keywords": [
+    "deepseek-harness",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "terminal",
+    "xterm",
+    "shell"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/client.js.map",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "icon.svg",
+    "assets/icon-180.png",
+    "assets/terminal-tab.webp",
+    "screenshots.json"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-terminal-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-sidebar-terminal",
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ],
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.2 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-api-session-controller": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-api-terminal-controller": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-locale": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-store": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-plugin-manager": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-renderer": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-session": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-sidebar-right": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-client-ui-theme": "0.2.2-rc.2",
+    "@deepseek-ai/dsh-session": "0.2.2-rc.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@xterm/addon-fit": "0.11.0",
+    "@xterm/xterm": "6.0.0",
+    "esbuild": "0.25.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT"
+}

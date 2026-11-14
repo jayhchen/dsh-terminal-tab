@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Terminal tab",
+    "description": "Adds a Terminal tab to the conversation view row, sharing the sidebar terminal's persistent shells, retention and recovery."
+  }
+}
