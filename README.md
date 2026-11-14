@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.webp" alt="dsh-terminal-tab — A persistent terminal tab in the conversation view row" width="100%">
+</p>
+
 <div align="center">
 
 <img src="icon.svg" width="96" alt="dsh-terminal-tab icon" />
@@ -34,23 +38,19 @@ Works with DSH `0.2.2-rc.2` and later `0.2.x` releases.
 
 ## Installation
 
-Web (CLI):
+Web:
 
-```sh
-dsh plugin --profile web add dsh-terminal-tab
 ```
-
-Desktop: open the in-app **Plugins** page and search for `dsh-terminal-tab`.
-
-Refresh the page after installing.
-
-## Update
-
-```sh
+dsh plugin --profile web add dsh-terminal-tab
 dsh plugin --profile web update dsh-terminal-tab
 ```
 
-Then refresh the page.
+Desktop:
+
+```
+dsh plugin --profile desktop add dsh-terminal-tab
+dsh plugin --profile desktop update dsh-terminal-tab
+```
 
 ## License
 
